@@ -3,6 +3,9 @@ import pyautogui
 import random
 import time
 
+# Disable the corner safety check
+pyautogui.FAILSAFE = False
+
 while True:
     screen_width, screen_height = pyautogui.size()
     x = random.randint(0, screen_width)
